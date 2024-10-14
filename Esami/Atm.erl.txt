@@ -1,0 +1,67 @@
+
+
+Atm.erl
+
+-module(atm). 
+-export([init/2, draw_cash/3, balance/1, request_shutdown/0]). 
+-export([make_request/3]). 
+
+init(BankPID, DispacherPID) ->
+  register(atm, self()), 
+  BankPID ! {self(), open_account}, 
+  DispacherPID ! {self(), open_account},
+  {ok, BankPID, DispacherPID}. 
+ 
+draw_cash(BankPID, DispacherPID, Amount) -> 
+  BankPID ! {self(), {draw_cash, Amount}}. 
+  DispacherPID ! {self(), {draw_cash, Amount}}. 
+
+balance(BankPID) -> 
+  BankPID ! {self(), balance}. 
+
+request_shutdown() -> 
+  exit(shutdown).
+
+make_request(PID, Request, Ref) -> 
+  PID ! {Ref, Request}. 
+
+Bank.erl
+
+-module(bank). 
+-export([init/1, serve/2, leave/0]). 
+
+init(DispacherPID) -> 
+  register(bank, self()), 
+  DispacherPID ! {self(), init_bank},
+  receive 
+    {Ref, ok} -> 
+		{ok, Ref}; 
+		_ -> 
+		 error 
+  end.
+
+serve({Ref, {draw_cash, Amount}}) -> 
+  leave(),
+  DispacherPID ! {Ref, {ok, Amount}}.
+
+leave() -> 
+  DispacherPID ! {self(), leave_bank}.
+
+Dispacher.erl
+
+-module(dispacher).
+-export([init/1, dispatch/2]).
+
+init(BankPID) ->
+  register(dispacher, self()),
+  BankPID ! {self(), init_dispacher},
+  receive
+    {Ref, ok} ->
+      {ok, Ref};
+      _ ->
+        error
+  end.
+
+dispatch(ATMPID, Request) ->
+  Ref = make_ref(),
+  ATMPID ! {Ref, Request}.

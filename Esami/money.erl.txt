@@ -1,0 +1,30 @@
+ money
+
+- Bank Module:
+	
+	-bank:start() -> ok
+	-
+	bank:deposit(Value) -> {ok, NewBalance}
+	-
+	bank:withdraw(Value) -> 
+								 {ok, MoneyWithdrawn, NewBalance} 
+								 | 
+								 {error, Reason}. 	
+
+- ATM Module:
+	
+	-atm:start(BankPID) -> ok
+	-
+	atm:withdraw(BankPID, Amount) -> {ok, MoneyWithdrawn, NewBalance}
+ 	-										| 
+ 										{error, Reason}
+ 	atm: deposit(BankPID, Amount) -> {ok, NewBalance}
+
+- Dispatcher Module:
+	
+	-dispatcher:start(BankPID, ATMPID) -> ok
+	-
+	dispatcher:withdraw(BankPID, Amount) -> {ok, MoneyWithdrawn, NewBalance}
+ 	-											| 
+ 											{error, Reason}
+ 	dispatcher: deposit(BankPID, Amount) -> {ok, NewBalance}
