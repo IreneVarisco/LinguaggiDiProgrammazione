@@ -15,7 +15,7 @@ OCaml ha molti tipi di dati predefiniti:
   let x = 10;;  (* x è un intero *)
   ```
   
-- **Float**: numeri con virgola mobile (devono finire con un punto esclamativo `.`).
+- **Float**: numeri con virgola mobile (devo utilizzare il punto `.`).
   ```ocaml
   let pi = 3.14;;
   ```
@@ -193,14 +193,4 @@ OCaml permette la lettura e scrittura su file.
   print_endline linea;
   close_in in_channel;;
   ```
-
----
-
-### **Risorse Aggiuntive**
-
-- **Documentazione Ufficiale**: https://ocaml.org/docs
-- **Learn OCaml (tutorial interattivo)**: https://ocaml.org/learn/tutorials
-- **TryOCaml (ambiente di sviluppo online)**: https://try.ocamlpro.com/
-
----
 
