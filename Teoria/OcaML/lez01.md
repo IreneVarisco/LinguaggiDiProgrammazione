@@ -10,6 +10,8 @@
 
 `[]`: Per rappresentare una lista vuota.
 
+`[a; b; c]` :  Per rappresentare una lista composta da a b e c
+
 `fst`: Per accedere al primo elemento di una tupla.
 
 `snd`: Per accedere al secondo elemento di una tupla.
@@ -26,9 +28,9 @@
 > <b>Record</b>: Un record è una struttura dati che contiene un insieme di campi con nomi e tipi associati. Nel nostro caso, il record temperatura ha due campi: valore (un numero a virgola mobile) e unita (una stringa).
 
 > <b>Pattern matching</b>: Utilizzato implicitamente in molte funzioni per "scomporre" le liste e le tuple. è un meccanismo molto potente che permette di "scomporre" un dato complesso (come un record o una lista) e agire in base alla sua struttura. Nel codice, il pattern matching viene utilizzato per:
-Estrarre il valore e l'unità da una temperatura.
-Selezionare la formula di conversione appropriata in base alla scala.
-Iterare su una lista di scale.
+- Estrarre il valore e l'unità da una temperatura.
+- Selezionare la formula di conversione appropriata in base alla scala.
+- Iterare su una lista di scale.
 
 > <b>Ricorsione</b>: La ricorsione è una tecnica di programmazione in cui una funzione si chiama direttamente o indirettamente. La funzione any2ct è ricorsiva perché si chiama se stessa per processare la coda della lista delle scale.
 
@@ -48,3 +50,5 @@ Iterare su una lista di scale.
 `List.rev`: Funzione che inverte l'ordine degli elementi di una lista.
 
 `Format.fprintf`: Funzione per la formattazione dell'output.
+
+`@` : per concatenare le liste
