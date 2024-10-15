@@ -1,4 +1,4 @@
-OCaml
+
 (* Definizione del tipo di temperatura *)
 type temperatura = { valore : float; unita : string };;
 
@@ -22,7 +22,7 @@ let any2c (t : temperatura) (unit : string) : temperatura =
 let rec p temp list ppf =
   match list with
   | [] -> Format.fprintf ppf "\n"
-  | hd::tl -> Format.fprintf ppf "%s: %f %s\n" hd.unita hd.valore; p temp tl ppf;;
+  | hd::tl -> Format.fprintf ppf "%s: %f %s\n" hd.unita hd.valore hd.unita; p temp tl ppf;;
 
 (* Funzione principale per creare la tabella delle conversioni *)
 let temp_table_format temp list ppf =
