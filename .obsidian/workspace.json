@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Teoria/OcaML/lez01.md",
+                "file": "Teoria/Erlang/Lez02.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Teoria/OcaML/lez01.md",
+                "file": "Teoria/Erlang/Lez02.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Teoria/OcaML/lez01.md",
+                "file": "Teoria/Erlang/Lez02.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Teoria/OcaML/lez01.md"
+                "file": "Teoria/Erlang/Lez02.md"
               }
             }
           }
@@ -148,8 +148,10 @@
   },
   "active": "198f9488f731ab7b",
   "lastOpenFiles": [
-    "Teoria/OcaML/lez06.md",
+    "Teoria/Erlang/pid.png",
+    "Teoria/Erlang/race-condition.png",
     "Teoria/OcaML/lez01.md",
+    "Teoria/OcaML/lez06.md",
     "README.md",
     "Untitled.canvas",
     "2024-10-14.md"
