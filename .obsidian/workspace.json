@@ -41,12 +41,24 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Teoria/Erlang/lez04.md",
+                "file": "Teoria/Erlang/lez03.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "lez04"
+              "title": "lez03"
+            }
+          },
+          {
+            "id": "80167cec730863c5",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.7.6"
+              },
+              "icon": "lucide-file",
+              "title": "Release Notes 1.7.6"
             }
           }
         ],
@@ -106,8 +118,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "b87a0523e1e4cbb3",
@@ -195,6 +206,11 @@
   },
   "active": "9e0fbcf2afe8a84d",
   "lastOpenFiles": [
+    "Laboratorio/Erlang/lab02/es3.bea#",
+    "Laboratorio/Erlang/lab02/es3.beam",
+    "Teoria/Erlang/lez04.md",
+    "Teoria/Erlang/lez03.md",
+    "Teoria/Erlang/Lez02.md",
     "Laboratorio/Erlang/lab02/es2.beam",
     "Laboratorio/Erlang/lab02/test_es2.erl",
     "Teoria/Erlang/Lez05.md",
