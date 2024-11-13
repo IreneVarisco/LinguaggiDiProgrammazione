@@ -43,7 +43,7 @@ I processi di sistema ricevono i segnali di uscita come messaggi ordinari, senza
 ```erlang
 process_flag(trap_exit, true).
 ```
-![pid](C:\Users\Irne\Desktop\GIGI\uni\LinguaggiDiProgrammazione\Teoria\Erlang\ERRORE.png)
+![pid](C:\Users\Irne\Desktop\GIGI\uni\LinguaggiDiProgrammazione\Teoria\Erlang\ERRORI.png)
 
 ### Alternative di Gestione dei Crash
 
