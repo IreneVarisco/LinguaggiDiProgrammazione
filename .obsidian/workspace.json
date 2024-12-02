@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Teoria/Erlang/lez03.md",
+                "file": "Teoria/Scala/lez01.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "lez03"
+              "title": "lez01"
             }
           },
           {
@@ -204,13 +204,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9e0fbcf2afe8a84d",
+  "active": "18ed4d129a22f231",
   "lastOpenFiles": [
+    "Teoria/Scala/lez02.md",
+    "Teoria/Scala/lez01.md",
+    "Teoria/Scala/lez03.md",
+    "Teoria/Erlang/Lez02.md",
+    "Teoria/Erlang/lez03.md",
     "Laboratorio/Erlang/lab02/es3.bea#",
     "Laboratorio/Erlang/lab02/es3.beam",
     "Teoria/Erlang/lez04.md",
-    "Teoria/Erlang/lez03.md",
-    "Teoria/Erlang/Lez02.md",
     "Laboratorio/Erlang/lab02/es2.beam",
     "Laboratorio/Erlang/lab02/test_es2.erl",
     "Teoria/Erlang/Lez05.md",
