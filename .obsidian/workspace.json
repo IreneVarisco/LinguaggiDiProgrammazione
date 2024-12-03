@@ -204,8 +204,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "18ed4d129a22f231",
+  "active": "9e0fbcf2afe8a84d",
   "lastOpenFiles": [
+    "Laboratorio/Scala/esercizioprova/Libro.tasty",
+    "Laboratorio/Scala/esercizioprova/esercizioprova.tasty",
+    "Laboratorio/Scala/esercizioprova/Libro$.class",
+    "Laboratorio/Scala/esercizioprova/Libro.class",
+    "Laboratorio/Scala/esercizioprova/esercizioprova.class",
+    "Laboratorio/Scala/esercizioprova/esercizioprova$.class",
     "Teoria/Scala/lez02.md",
     "Teoria/Scala/lez01.md",
     "Teoria/Scala/lez03.md",
@@ -219,9 +225,7 @@
     "Teoria/Erlang/Lez05.md",
     "Teoria/Erlang/LearningErlang.md",
     "Laboratorio/Erlang/lab02/es2.erl",
-    "Laboratorio/Erlang/lab02/es1.beam",
     "Teoria/Erlang/Lez01.md",
-    "Laboratorio/Erlang/lab02/es1.erl",
     "Teoria/Erlang/pid.png",
     "Teoria/Erlang/race-condition.png",
     "Teoria/OcaML/lez01.md",
