@@ -4,65 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "dd1aa1a2257d66c0",
+        "id": "de7248865790c392",
         "type": "tabs",
         "children": [
           {
-            "id": "198f9488f731ab7b",
+            "id": "8a80d35f050f2e74",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Teoria/Erlang/Lez02.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Lez02"
-            }
-          },
-          {
-            "id": "1a965fba6cb8aefc",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Teoria/Erlang/Lez02.md",
+                "file": "Teoria/Scala/lez04.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Lez02"
-            }
-          },
-          {
-            "id": "9e0fbcf2afe8a84d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Teoria/Scala/lez01.md",
-                "mode": "preview",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "lez01"
-            }
-          },
-          {
-            "id": "80167cec730863c5",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.7.6"
-              },
-              "icon": "lucide-file",
-              "title": "Release Notes 1.7.6"
+              "title": "lez04"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -204,8 +163,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9e0fbcf2afe8a84d",
+  "active": "8a80d35f050f2e74",
   "lastOpenFiles": [
+    "Teoria/Scala/type_hierarchy.png",
+    "Teoria/Scala/lez04.md",
     "Laboratorio/Scala/esercizioprova/Libro.tasty",
     "Laboratorio/Scala/esercizioprova/esercizioprova.tasty",
     "Laboratorio/Scala/esercizioprova/Libro$.class",
@@ -224,7 +185,6 @@
     "Laboratorio/Erlang/lab02/test_es2.erl",
     "Teoria/Erlang/Lez05.md",
     "Teoria/Erlang/LearningErlang.md",
-    "Laboratorio/Erlang/lab02/es2.erl",
     "Teoria/Erlang/Lez01.md",
     "Teoria/Erlang/pid.png",
     "Teoria/Erlang/race-condition.png",
