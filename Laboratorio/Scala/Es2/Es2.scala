@@ -4,21 +4,23 @@
 
 object Es2 {
     def squared_numbers (l : List[Any]): List[Any] = {
-        l.collect{
-            case i: Int => i * i
-            case d: Double => d *d
-            case f: Float => f * f
+        l.flatMap {
+            case i: Int => List(i * i)
+            case d: Double => List(d * d)
+            case f: Float => List(f * f)
             case l: List[_] => squared_numbers(l)
+            case _ => None
         }
     }
 
     def intersect(l1 : List[Any], l2 : List[Any]): List[Any] = {
         //l1.foreach{case l2.contains(_) => intersect += _}
-        l1.filter(l2.contains)
+        for(el <- l1 if l2.contains(el)) yield el
     }
 
     def symmetric_difference(l1 : List[Any], l2 : List[Any]): List[Any] = {
-        l1.filterNot(l2.contains) ++ l2.filterNot(l1.contains)
+        (for(el <- l1 if !l2.contains(el)) yield el) ++ (for(el <- l2 if !l1.contains(el)) yield el)
+        //l1.filterNot(l2.contains) ++ l2.filterNot(l1.contains)
     }
 
     def main (args :Array[String]): Unit = {
