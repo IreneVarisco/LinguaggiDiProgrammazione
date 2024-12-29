@@ -1,7 +1,18 @@
 object Es1 {
     def isPalindrome(s: String): Boolean = {
         val p = s.replaceAll("\\s", "")
-        p.toLowerCase == p.toLowerCase.reverse
+        // p.toLowerCase == p.toLowerCase.reverse
+        rev(p.toLowerCase) == p.toLowerCase
+    }
+
+    def rev(s: String): String = {
+        var rev = ""
+        //for (i <- s.length - 1 to 0 by -1) {
+        //    rev += s(i)
+        //} 
+        rev = (for (i <- s.length - 1 to 0 by -1) yield s(i)).mkString
+
+        rev
     }
 
     def isAnagram(s:String , Dictonary:List[String]): Boolean = {

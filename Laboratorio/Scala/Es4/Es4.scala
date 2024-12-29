@@ -3,11 +3,11 @@ trait monoide[A] {
   val identity: A
 
 
-  def isAssociative(a: A, b: A, c: A) =
+  def isAssociative(a: A, b: A, c: A): Boolean =
     add(a, add(b, c)) == add(add(a, b), c)
   
 
-  def hasIdentity(x: A) =
+  def hasIdentity(x: A): Boolean =
     add(x, identity) == x && add(identity, x) == x
   
 }
@@ -19,7 +19,7 @@ trait gruppo[A] extends monoide[A]{
     add(x, inverse(x)) == identity
   }
   
-  def isCommutative(a: A, b: A): Boolean ={
+  def isCommutative(a: A, b: A): Boolean = {
     add(a, b) == add(b, a)
   }
 }
@@ -27,15 +27,15 @@ trait gruppo[A] extends monoide[A]{
 trait ring[A] extends gruppo[A]{
     def mul(a: A, b: A): A    
     def mulIdentity: A
-    def isDistributive (a:A, b: A, c: A): Boolean ={
-        mul(a, mul(b, c)) == mul(mul(a, b), mul(a, c)) && mul(mul(a, b), c) == mul(mul(a, c), mul(b, c))
+    def isDistributive (a: A, b: A, c: A): Boolean = {
+        mul(a, add(b, c)) == add(mul(a, b), mul(a, c)) && mul(add(a, b), c) == add(mul(a, c), mul(b, c))
     }
 
-    def isMulAssociative(a: A, b: A, c: A): Boolean ={
+    def isMulAssociative(a: A, b: A, c: A): Boolean = {
         mul(a, mul(b, c)) == mul(mul(a, b), c)
     }
 
-    def isMulIdentity(x: A): Boolean ={
+    def isMulIdentity(x: A): Boolean = {
         mul(x, mulIdentity) == x && mul(mulIdentity, x) == x
     }
 }
@@ -76,7 +76,7 @@ object Main extends App {
         def mul(a: Int, b: Int): Int = a * b
         val mulIdentity: Int = 1
     }
-    println("MONIDE")
+    println("MONOIDE")
     println(s"BoolAdd: ${BoolMonoide.add(t, f)}")
     println(s"IntAdd: ${IntMonoide.add(a, b)}")
 

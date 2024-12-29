@@ -1,0 +1,27 @@
+{
+  "name": "scala",
+  "argv": [
+    "C:\\Users\\Irne\\AppData\\Local\\Coursier\\cache\\arc\\https\\github.com\\scala\\scala3\\releases\\download\\3.6.1\\scala3-3.6.1-x86_64-pc-win32.zip\\libexec\\scala-cli.exe",
+    "--cli-default-scala-version",
+    "3.6.1",
+    "--repository",
+    "file:///C:/Users/Irne/AppData/Local/Coursier/cache/arc/https/github.com/scala/scala3/releases/download/3.6.1/scala3-3.6.1-x86_64-pc-win32.zip/maven2",
+    "--prog-name",
+    "scala",
+    "--skip-cli-updates",
+    "bsp",
+    "--json-options",
+    "C:\\Users\\Irne\\Desktop\\GIGI\\uni\\LinguaggiDiProgrammazione\\Laboratorio\\Scala\\Es7\\.scala-build\\ide-options-v2.json",
+    "--json-launcher-options",
+    "C:\\Users\\Irne\\Desktop\\GIGI\\uni\\LinguaggiDiProgrammazione\\Laboratorio\\Scala\\Es7\\.scala-build\\ide-launcher-options.json",
+    "--envs-file",
+    "C:\\Users\\Irne\\Desktop\\GIGI\\uni\\LinguaggiDiProgrammazione\\Laboratorio\\Scala\\Es7\\.scala-build\\ide-envs.json",
+    "C:\\Users\\Irne\\Desktop\\GIGI\\uni\\LinguaggiDiProgrammazione\\Laboratorio\\Scala\\Es7\\Es7.scala"
+  ],
+  "version": "1.5.1",
+  "bspVersion": "2.1.1",
+  "languages": [
+    "scala",
+    "java"
+  ]
+}
